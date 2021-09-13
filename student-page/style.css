@@ -10,7 +10,6 @@ html {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #000;
-	/*position:fixed;*/
 }
 .person {
 	display: flex;
@@ -30,15 +29,25 @@ html {
 
 }
 .avatar {
-	
+	background-color: white;
+    border-radius: 360px;
+    width: 300px;
+    height: 300px;
+    display: grid;
+}
+.avatar:hover {
+  transform: rotateZ(180deg);
+  transition: all 1s ease;
+  margin-left: 32px;
+  
 }
 .avatar__picture {
-	width: 300px;
-	height: 300px;
-	object-fit: scale-down;
-	border-radius: 360px;
-	border: 5mm solid white;
-	
+	width: 80%;
+    height: 80%;
+    object-fit: scale-down;
+    border-radius: 360px;
+    justify-self: center;
+    align-self: center;	
 }
 .contacts {
 	
@@ -53,18 +62,17 @@ html {
 	margin-bottom: 32px;
 }
 .contacts__item {
-	
+	list-style-type: none;
 }
 .contacts__title {
 	font-weight: bold;
 	font-style: italic;
 }
 .contacts__title:after {
-	
+	content: ":";
 }
 .contacts__link {
-	color:grey;
-	font-style: italic;
+	color: grey;
 }
 .paragraph {
 	margin-bottom: 16px;
@@ -72,4 +80,3 @@ html {
 .paragraph_last {
 	margin-bottom: 48px;
 }
-	
